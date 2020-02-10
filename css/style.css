@@ -17,7 +17,7 @@ h2 {
     line-height: 1.5em;
     text-align: center;
     /* font-family: 'Mukta', sans-serif; */
-    font-weight: 200;
+    font-weight: 500;
     padding-top: 10px;
     text-transform: uppercase;
 }
@@ -50,6 +50,9 @@ h4 a {
 
 section {
     position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .launch {
@@ -62,7 +65,7 @@ section {
     border-bottom: 0px solid rgba(37, 37, 37, 1);
     padding: 6px;
     background-color: white;
-    max-width: 1410px;
+    max-width: 1440px;
     margin: 0 auto;
     opacity: 0.97;
 }
@@ -183,13 +186,13 @@ section {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
-    .navbar-brand {
+    /* .navbar-brand {
         padding: 10px;
     }
 
     .navbar .nav>li>a {
         font-size: 14px;
-    }
+    } */
 }
 
 hr.hr-style {
@@ -240,22 +243,31 @@ hr.hr-style {
     z-index: 1;
 }
 
-.container {
+.holdings-pg h2 {
+    text-transform:  capitalize;
+    font-size: 17px;
+}
+
+.container-fluid {
     width: 100%;
     max-width: 1440px;
 }
 
-/* .container.np {
-    padding-left: 0;
-    padding-right: 0;
-} */
+.container-fluid.np {
+   padding: 0;
+}
+
+.container-fluid.np .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
 .img {
     width: 100%;
     height: auto;
 }
 
-.container .jumbotron {
+.container-fluid .jumbotron {
     position: relative;
     padding: 113px 20px 236px 20px;
     margin-bottom: 0;
@@ -263,7 +275,7 @@ hr.hr-style {
 }
 
 @media(max-width:768px) {
-    .container .jumbotron {
+    .container-fluid .jumbotron {
         padding: 69px 15px;
     }
 }
@@ -275,7 +287,7 @@ hr.hr-style {
     }
 }
 
-.jumbotron .container {
+.jumbotron .container-fluid {
     position: relative;
     z-index: 2;
     max-width: 411px;
@@ -283,12 +295,12 @@ hr.hr-style {
 }
 
 @media(max-width:768px) {
-    .jumbotron .container {
+    .jumbotron .container-fluid {
         margin-left: 0;
     }
 }
 
-.jumbotron .container h1 {
+.jumbotron .container-fluid h1 {
     color: white;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-weight: 600;
@@ -297,12 +309,12 @@ hr.hr-style {
 }
 
 @media(max-width:768px) {
-    .jumbotron .container h1 {
+    .jumbotron .container-fluid h1 {
         font-size: 31px;
     }
 }
 
-.jumbotron .container p {
+.jumbotron .container-fluid p {
     color: white;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-weight: 400;
@@ -361,7 +373,7 @@ section#intro {
     background-color: white;
 }
 
-section#intro .container {
+section#intro .container-fluid {
     z-index: 2;
 }
 
@@ -710,7 +722,7 @@ caption {
 /*footer*/
 footer {
     display: block;
-    max-width: 1410px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -1056,6 +1068,8 @@ section.team {
     filter: grayscale(1);
     max-width: 358px;
     width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .team .profile:hover img {
@@ -1076,8 +1090,11 @@ section.team {
     bottom: 0;
     background: rgba(44, 47, 57, 0.6);
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
     color: white;
+    max-width: 358px;
+    left: 0;
+    right: 0;
 }
 
 .team .profile:hover .descr {
