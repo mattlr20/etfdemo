@@ -4,7 +4,7 @@
 
 body {
     padding-top: 62px;
-    font-size: 16px;
+    font-size: 17px;
     width: 100%;
     background-color: white;
     color: #252525;
@@ -62,14 +62,14 @@ section {
     border-bottom: 0px solid rgba(37, 37, 37, 1);
     padding: 6px;
     background-color: white;
-    max-width: 1440px;
+    max-width: 1410px;
     margin: 0 auto;
     opacity: 0.97;
 }
 
 .navbar .nav>li>a {
     color: #045184;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     text-transform: uppercase;
     transition: color 0.4s ease 0s;
@@ -245,10 +245,10 @@ hr.hr-style {
     max-width: 1440px;
 }
 
-.container.np {
+/* .container.np {
     padding-left: 0;
     padding-right: 0;
-}
+} */
 
 .img {
     width: 100%;
@@ -493,6 +493,11 @@ th {
     border-color: rgb(44, 51, 129);
 }
 
+.project_area .form-control,
+.project_area .btn-read  {
+    margin-bottom: 15px;
+}
+
 /* .about p {
     font-size: 20px;
     padding: 10px 10px;
@@ -705,7 +710,7 @@ caption {
 /*footer*/
 footer {
     display: block;
-    max-width: 1440px;
+    max-width: 1410px;
     margin: 0 auto;
 }
 
